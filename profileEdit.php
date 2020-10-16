@@ -7,46 +7,6 @@
   	header('Location: index.php');
   }
 
-  if(isset($_POST['screenName'])){
-  	if(!empty($_POST['screenName'])){
-      $screenName = $getFromU->checkInput($_POST['screenName']);
-      $profileBio = $getFromU->checkInput($_POST['bio']);
-      $country    = $getFromU->checkInput($_POST['country']);
-      $website    = $getFromU->checkInput($_POST['website']);
-
-      if(strlen($screenName) > 20){
-        $error = "Name must be less than 20 words";
-      }elseif (strlen($profileBio) > 120){
-      	$error = "Desciption should be less than 120 words";
-      }elseif (strlen($country) > 80){
-      	$error = "Country name should be less than 80 words";
-      }else{
-      	$getFromU->update('users', $user_id, array('screenName' => $screenName, 'bio' => $profileBio,'country'=>$country, 'website' => $website)); #update method
-      	header('Location: '.$user->username);
-      }
-  	}else{
-  		$error  = "Name field can't be blank"; 
-  	}
-  }
-
-  if(isset($_FILES['profileImage'])){
-  	if(!empty($_FILES['profileImage']['name'][0])){
-  		$fileRoot = $getFromU->uploadImage($_FILES['profileImage']);
-  		$getFromU->update('users', $user_id, array('profileImage' => $fileRoot));
-
-         header('Location: '.$user->username);
-  	}
-  }
-
-    if(isset($_FILES['profileCover'])){
-  	if(!empty($_FILES['profileCover']['name'][0])){
-  		$fileRoot = $getFromU->uploadImage($_FILES['profileCover']);
-  		$getFromU->update('users', $user_id, array('profileCover' => $fileRoot));
-  		
-        header('Location: '.$user->username);   
-  	}
-  }
-
 ?>
 
 <!doctype html>
@@ -58,7 +18,7 @@
 	<link rel="stylesheet" href="assets/css/style-complete.css"/>
 	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
 </head>
-<!--Helvetica Neue-->
+<!--Helvetica Neue and add your own color-->
 <body>
 <div class="wrapper">
 	<!-- header wrapper -->
