@@ -1,0 +1,136 @@
+hr{ 
+    
+    /* background-color:#DDF3F5 ; */
+    border-style: dotted none none none;
+    border-width: 5px;
+    border-color: gainsboro;
+    width: 5%;
+}
+
+body{
+    background-color:#e4f9ff ;
+    text-align: center;
+    margin: 1;
+    
+    
+    
+}
+
+.profile h1
+{
+  
+  font-family: 'Meddon', cursive;
+
+  font-size: 52px;
+}
+
+
+.underline
+{
+  text-decoration: underline overline grey;
+}
+.intro
+{
+  /* background-color: #E4F9F5; */
+  margin-top: 0;
+  
+}
+
+ .topcloud
+{
+  position: absolute;
+  top: 250px;
+  right: 300px;
+ 
+}
+.bottomcloud
+{
+  position: absolute;
+  top: 400px;
+  left:300px ;
+
+}
+
+.pro
+{
+  text-decoration: underline overline grey;
+}
+
+.intro p
+{
+  font-size: 25px;
+  line-height: 10px;
+}
+
+.mountain
+{
+  padding: 30px;
+  width: 20%;
+}
+.profileimg
+{
+  float: left;
+  position: absolute;
+  left: 400px;
+
+}
+.profile
+{
+  padding: 1px;
+  margin: 1px;
+  text-align: center;
+}
+
+.aboutme h3
+{
+  display: inline-block;
+  padding: 25px 0px 0px 0px ;
+  font-family: 'Rock Salt', cursive;
+  /* position: relative;
+  left: 500px; */
+}
+.about
+{
+  position: absolute;
+  left: 100px;
+}
+.contact
+{
+  position: absolute;
+  right: 100px;
+}
+.gif
+{
+  width: 30%;
+}
+
+.footer 
+{
+  padding: 20px 0 10px 0;
+  /* margin: 10px 20px; */
+  background-color: mediumaquamarine;
+  line-height: 2;
+
+}
+.footer a
+{
+  margin: 15px 15px;
+  font-size: 20px;
+}
+
+.contactme h2
+{
+  font-size: 40px;
+}
+.contactme h3
+{
+  font-size: 30px;
+}
+.contactme p
+{
+  font-size: 25px;
+}
+.contactme a
+{
+  font-size: 20px;
+}
